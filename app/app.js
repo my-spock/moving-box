@@ -1,1 +1,1 @@
-var app = angular.module('ng-boxes', [ui-router]);
+var app = angular.module('ng-boxes', []);

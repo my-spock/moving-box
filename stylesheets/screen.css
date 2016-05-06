@@ -70,13 +70,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 8, ../sass/screen.scss */
 #greenbox {
   background-color: green;
-  height: 100%;
-  width: 100%;
+  margin: 0 10;
+  height: 600px;
+  width: 600px;
+  position: relative;
 }
-
-/* line 14, ../sass/screen.scss */
-#bluebox {
+/* line 15, ../sass/screen.scss */
+#greenbox #bluebox {
   background-color: blue;
   height: 10px;
   width: 10px;
+  position: absolute;
 }

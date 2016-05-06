@@ -5,18 +5,24 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="stylesheets/screen.css">
 </head>
-<body>
-    <greenbox></greenbox>
+<body ng-controller="GameController as gc">
+    <div id="greenbox" ng-keyDown='gc.movePlayer($event)' tabindex="0">
+        <div id="bluebox" style="top: {{gc.vertical}}; left: {{gc.horizontal}}">
+            
+        </div>
+    </div>
+    
     
     
     <script src='bower_components/angular/angular.js'></script>
-    <script src='bower_components/angular-ui-router/release/angular-ui-router.js'></script>
+    <!--<script src='bower_components/angular-ui-router/release/angular-ui-router.js'></script>-->
     
     <script src='app/app.js'></script>
-    <script src='app/app-router.js'></script>
+    <script src='app/game.js'></script>
+    <!--<script src='app/app-router.js'></script>
     <script src='app/components/greenbox-component.js'></script>
     <script src='app/components/greenbox.html'></script>
     <script src='app/components/innerbox-component.js'></script>
-    <script src='app/components/innerbox.html'></script>
+    <script src='app/components/innerbox.html'></script>-->
 </body>
 </html>
