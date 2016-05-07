@@ -7,7 +7,7 @@
 </head>
 <body ng-controller="GameController as gc">
     <div id="greenbox" ng-keyDown='gc.movePlayer($event)' tabindex="0">
-        <div id="bluebox" style="top: {{gc.vertical}}; left: {{gc.horizontal}}">
+        <div id="bluebox" style="top: {{gc.bluebox.position.top}}; left: {{gc.bluebox.position.left}}">
             
         </div>
     </div>
